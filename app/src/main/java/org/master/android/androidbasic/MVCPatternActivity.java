@@ -22,7 +22,6 @@ public class MVCPatternActivity extends AppCompatActivity implements Observer {
         btn1 = findViewById(R.id.btn_one) ;
         btn2 = findViewById(R.id.btn_two) ;
         btn3 = findViewById(R.id.btn_three) ;
-
         btn1.setOnClickListener(v-> setValue(0) );
         btn2.setOnClickListener(v-> setValue(1) );
         btn3.setOnClickListener(v-> setValue(2) );
