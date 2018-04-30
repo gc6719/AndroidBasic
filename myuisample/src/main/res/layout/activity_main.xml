@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/custom_tool_bar"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+    <TableRow android:gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name" />
+
+        <EditText
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </TableRow>
+
+    <TableRow android:gravity="center"
+        android:weightSum="3">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name" />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name" />
+    </TableRow>
+
+
+    <TableRow android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/send_me"
+            android:layout_weight="0.85"
+            android:text="Start Second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/visible"
+            android:layout_weight="0.85"
+            android:text="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/invisible"
+            android:layout_weight="0.5"
+            android:text="INVISIBLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/gone"
+            android:layout_weight="0.5"
+            android:text="GONE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.5"
+        android:gravity="center">
+        <Button
+            android:layout_weight="0.5"
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/test_btn"
+            android:layout_weight="0.5"
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/showlist"
+            android:layout_weight="0.5"
+            android:text="Show List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+  </TableLayout>
+
+
